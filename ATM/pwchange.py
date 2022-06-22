@@ -132,4 +132,3 @@ class Ui_pwchange(object):
         self.label.setText(_translate("pwchange", "旧密码"))
         self.label_2.setText(_translate("pwchange", "新密码"))
         self.label_3.setText(_translate("pwchange", "确认密码"))
-import hnu_rc

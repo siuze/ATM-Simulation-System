@@ -113,4 +113,3 @@ class Ui_cashAccount(object):
         self.label1.setText(_translate("cashAccount", "注意：每个账户每天可最多取出两千元"))
         self.livetime_btn.setText(_translate("cashAccount", "活期账户"))
         self.label1_2.setText(_translate("cashAccount", "请选择账户"))
-import hnu_rc

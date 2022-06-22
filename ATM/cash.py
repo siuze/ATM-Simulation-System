@@ -148,4 +148,3 @@ class Ui_cash(object):
         self.other_amount_btn.setText(_translate("cash", "其他金额"))
         self.btn2000.setText(_translate("cash", "2000"))
         self.return_btn.setText(_translate("cash", "返 回 ->"))
-import hnu_rc

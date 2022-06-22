@@ -218,4 +218,3 @@ class Ui_record(object):
         item.setText(_translate("record", "余额"))
         item = self.tableWidget.horizontalHeaderItem(6)
         item.setText(_translate("record", "交易备注"))
-import hnu_rc

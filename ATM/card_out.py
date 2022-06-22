@@ -98,4 +98,3 @@ class Ui_card_out(object):
         self.label1.setText(_translate("card_out", "本次服务已结束！"))
         self.label2.setText(_translate("card_out", "请妥善保管您的个人财物！"))
         self.label1_2.setText(_translate("card_out", "感谢您的使用！"))
-import hnu_rc

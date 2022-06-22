@@ -183,4 +183,3 @@ class Ui_inquiry(object):
         self.label1.setText(_translate("inquiry", "账户当前余额："))
         self.label2.setText(_translate("inquiry", "当前可取余额："))
         self.label1_2.setText(_translate("inquiry", "账户类型："))
-import hnu_rc

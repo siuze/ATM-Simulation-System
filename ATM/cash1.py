@@ -122,4 +122,3 @@ class Ui_cash1(object):
         self.label1_3.setText(_translate("cash1", "注意：金额必须为100整数倍！"))
         self.cash_btn.setText(_translate("cash1", "取款"))
         self.card_out_btn.setText(_translate("cash1", "退卡"))
-import hnu_rc

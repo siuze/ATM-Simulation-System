@@ -162,4 +162,3 @@ class Ui_deposit(object):
         self.card_out_btn.setText(_translate("deposit", "<- 退 卡"))
         self.btn5000.setText(_translate("deposit", "5000"))
         self.btn100.setText(_translate("deposit", "100"))
-import hnu_rc

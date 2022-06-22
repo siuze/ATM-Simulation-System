@@ -115,4 +115,3 @@ class Ui_login(object):
         self.login_btn.setText(_translate("login", "登录 Login"))
         self.label.setText(_translate("login", "卡号："))
         self.label_2.setText(_translate("login", "密码："))
-import hnu_rc

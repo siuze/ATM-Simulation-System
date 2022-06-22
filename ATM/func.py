@@ -1,25 +1,26 @@
-import random
-from turtle import begin_fill
-import pymysql
 import base64
+
+import pymysql
 from Crypto.Cipher import AES
 from Crypto.Util import Padding
 from Crypto.Util.py3compat import *
+
 
 def toAES_base64(data):
         mode=AES.MODE_ECB
         style='pkcs7'
         key="HNUdatabase"
-        _data = Padding.pad(data.encode('utf-8'), block_size=16, style=style)#填充
+        _data = Padding.pad(data.encode('utf-8'), block_size=16, style=style)
         amount_to_pad = 16 - (len(key) % 16)
         pad = bchr(0)
         _key=key.encode("utf-8") + pad * amount_to_pad
         cipher = AES.new(_key, mode=mode)
         return base64.b64encode(cipher.encrypt(_data)).decode("utf-8")
 
-# 连接
+
+# 注意更换此处信息为你自己的数据库信息
 parmas = {
-    'host': '139.9.191.1',
+    'host': '127.0.0.1',
     'port': 3306,
     'user': 'atm',
     'passwd': 'HNUdb',
@@ -27,6 +28,8 @@ parmas = {
     'charset': 'utf8',
     'cursorclass': pymysql.cursors.DictCursor
 }
+
+
 mydb = pymysql.connections.Connection(**parmas)  # 连接数据库
 
 #登录
@@ -90,6 +93,7 @@ def deposit(account_type,num):
     print(info)
     return state,info,balance
    
+
 # 查询余额，返回余额值
 def inquiry(account_type):
     mycursor = mydb.cursor()  # 获取游标
@@ -132,7 +136,7 @@ def changepwd(oldpwd,newpwd):
     print(info)
     return state,info
 
-#历史记录查询
+
 def checkrecords(account_type,begin_day,end_day,select_method,sort_method):
     mycursor=mydb.cursor()
     mycursor.callproc(procname='history',args=[cookie,account_type,begin_day,end_day,select_method,sort_method])

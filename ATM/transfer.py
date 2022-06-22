@@ -139,4 +139,3 @@ class Ui_transfer(object):
         self.to_cb.setItemText(0, _translate("transfer", "活期账户"))
         self.to_cb.setItemText(1, _translate("transfer", "定期账户"))
         self.to_cb.setItemText(2, _translate("transfer", "信用卡账户"))
-import hnu_rc

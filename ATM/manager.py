@@ -97,4 +97,3 @@ class Ui_manager(object):
         self.label1.setText(_translate("manager", "您好，请选择您需要的服务！"))
         self.signup_btn.setText(_translate("manager", "开户"))
         self.login_btn.setText(_translate("manager", "登录 Login"))
-import hnu_rc

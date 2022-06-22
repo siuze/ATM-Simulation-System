@@ -1,26 +1,29 @@
 import sys
-import func
-from PyQt5.QtCore import QTimer
-from PyQt5 import QtGui
-# import pics_rc
-from atm import Ui_atm
-from cash import Ui_cash
-from cash1 import Ui_cash1
-from login import Ui_login
-from cashAccount import Ui_cashAccount
-from signup import Ui_signup
-from inquiry import Ui_inquiry
-from record import Ui_record
-from manager import Ui_manager
-from deposit import Ui_deposit
-from deposit1 import Ui_deposit1
-from transfer import Ui_transfer
-from card_out import Ui_card_out
-from pwchange import Ui_pwchange
-from PyQt5 import QtCore
-from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox, QTableWidgetItem
 from datetime import date
 from datetime import datetime
+
+from PyQt5 import QtCore
+from PyQt5 import QtGui
+from PyQt5.QtCore import QTimer
+from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox, QTableWidgetItem
+
+import func
+# import pics_rc
+from atm import Ui_atm
+from card_out import Ui_card_out
+from cash import Ui_cash
+from cash1 import Ui_cash1
+from cashAccount import Ui_cashAccount
+from deposit import Ui_deposit
+from deposit1 import Ui_deposit1
+from inquiry import Ui_inquiry
+from login import Ui_login
+from manager import Ui_manager
+from pwchange import Ui_pwchange
+from record import Ui_record
+from signup import Ui_signup
+from transfer import Ui_transfer
+
 account_type='活期'
 
 # 管理员界面
@@ -195,7 +198,6 @@ if __name__ == "__main__":
         if reply == QMessageBox.Yes:
             signup.name.setText("")
             signup.tel.setText("")
-            #signup.id.setText("")
             signup.close()
             manager.show()  # show()方法显示窗口
         elif reply == QMessageBox.No:

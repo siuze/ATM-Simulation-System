@@ -151,4 +151,3 @@ class Ui_signup(object):
         self.label_3.setText(_translate("signup", "身份证号："))
         self.label_2.setText(_translate("signup", "请输入密码："))
         self.label_4.setText(_translate("signup", "确认密码："))
-import hnu_rc
