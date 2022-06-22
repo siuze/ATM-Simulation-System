@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>cashAccount</class>
+ <widget class="QWidget" name="cashAccount">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>cashAccount</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#atm{background-color: rgb(52, 80, 164);border-top-left-radius:15px;border-top-right-radius:5px;border-bottom-left-radius:15px;border-bottom-right-radius:5px}
+</string>
+  </property>
+  <widget class="QPushButton" name="credit_btn">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>150</y>
+     <width>111</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border:2px groove gray;border-radius:10px;padding:2px 4px;background-color: rgb(225, 225, 225);}
+QPushButton:hover{background-color: rgb(14, 122, 255);border:none;color:rgb(255, 255, 255);}
+QPushButton:checked{background-color: rgb(20, 62, 134);border:none;color:rgb(255, 255, 255);}</string>
+   </property>
+   <property name="text">
+    <string>信用卡</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="settime_btn">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>150</y>
+     <width>111</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border:2px groove gray;border-radius:10px;padding:2px 4px;background-color: rgb(225, 225, 225);}
+QPushButton:hover{background-color: rgb(14, 122, 255);border:none;color:rgb(255, 255, 255);}
+QPushButton:checked{background-color: rgb(20, 62, 134);border:none;color:rgb(255, 255, 255);}</string>
+   </property>
+   <property name="text">
+    <string>定期账户</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>240</y>
+     <width>471</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>华文中宋</family>
+     <pointsize>14</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(255, 0, 0)</string>
+   </property>
+   <property name="text">
+    <string>注意：每个账户每天可最多取出两千元</string>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>false</bool>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="openExternalLinks">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="livetime_btn">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>150</y>
+     <width>111</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border:2px groove gray;border-radius:10px;padding:2px 4px;background-color: rgb(225, 225, 225);}
+QPushButton:hover{background-color: rgb(14, 122, 255);border:none;color:rgb(255, 255, 255);}
+QPushButton:checked{background-color: rgb(20, 62, 134);border:none;color:rgb(255, 255, 255);}</string>
+   </property>
+   <property name="text">
+    <string>活期账户</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label1_2">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>60</y>
+     <width>341</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>华文中宋</family>
+     <pointsize>14</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(255, 0, 0)</string>
+   </property>
+   <property name="text">
+    <string>请选择账户</string>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>false</bool>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="openExternalLinks">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QListView" name="listView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>501</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image:url(:/back/back.png)</string>
+   </property>
+  </widget>
+  <zorder>listView</zorder>
+  <zorder>credit_btn</zorder>
+  <zorder>settime_btn</zorder>
+  <zorder>label1</zorder>
+  <zorder>livetime_btn</zorder>
+  <zorder>label1_2</zorder>
+ </widget>
+ <resources>
+  <include location="hnu.qrc"/>
+ </resources>
+ <connections/>
+</ui>
